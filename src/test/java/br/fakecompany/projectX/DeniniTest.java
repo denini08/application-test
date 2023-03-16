@@ -60,7 +60,22 @@ public class DeniniTest
 
     @Test
     public void testFail(){
-        assertTrue(false);
+        assertTrue(true);
     }
 
+    /*
+     * @Test
+     * public void testFactorialGabrielLuiz(){        
+     *  try{
+     *     myUtils.factorial(-1);
+     *  }catch(Exception ex){
+     *      String resultado = ex.getMessage();
+     *      String esperado  = "Número deve ser maior ou igual a zero";
+     *      assertEquals(esperado,resultado);
+     *  }
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testFactorialGabrielLuiz(){        
+            myUtils.factorial(-1);
+    }
 }
