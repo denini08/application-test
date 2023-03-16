@@ -1,11 +1,18 @@
 package br.fakecompany.projectX;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class MyUtils {
-    // Método para calcular o fatorial de um número
+
+    /**
+     * Calcula o fatorial de um número.
+     *
+     * @param num o número a ser calculado o fatorial
+     * @return o fatorial do número de entrada
+     * @throws IllegalArgumentException se o número de entrada for negativo
+     */
+
     public int factorial(int num) {
         if (num < 0) {
             throw new IllegalArgumentException("Número deve ser maior ou igual a zero");
@@ -17,7 +24,14 @@ public class MyUtils {
         return result;
     }
 
-    // Método para verificar se uma string é um palíndromo
+    /**
+     * Verifica se uma string é um palíndromo.
+     *
+     * @param str a string a ser verificada
+     * @return true se a string for um palíndromo,
+     * @return false caso contrário ou a string for nula
+     * 
+     */
     public boolean isPalindrome(String str) {
         if (str == null) {
             return false;
@@ -34,7 +48,12 @@ public class MyUtils {
         return true;
     }
 
-    // Método para encontrar os números pares em uma lista
+    /**
+     * Retorna uma lista contendo apenas os números pares da lista de entrada.
+     *
+     * @param numbers a lista de números a ser filtrada
+     * @return uma lista contendo apenas os números pares da lista de entrada
+     */
     public List<Integer> findEvenNumbers(List<Integer> numbers) {
         if (numbers == null) {
             return new ArrayList<>();
@@ -47,4 +66,110 @@ public class MyUtils {
         }
         return evenNumbers;
     }
+
+    /**
+     * Método para encontrar o índice da última ocorrência de um elemento em uma
+     * lista.
+     *
+     * @param lista    a lista na qual procurar o elemento
+     * @param elemento o elemento a ser procurado na lista
+     * @return o índice da última ocorrência do elemento na lista, ou -1 se o
+     *         elemento não estiver presente na lista
+     */
+    public int encontrarUltimaOcorrencia(List<Object> lista, Object elemento) {
+        if (lista == null || elemento == null) {
+            return -1;
+        }
+        int lastIndex = -1;
+        for (int i = 0; i < lista.size(); i++) {
+            if (lista.get(i).equals(elemento)) {
+                lastIndex = i;
+            }
+        }
+        return lastIndex;
+    }
+
+    /**
+     * Método para calcular a média ponderada de um conjunto de notas.
+     *
+     * @param notas um array de notas, onde cada nota é um número entre 0 e 10
+     * @param pesos um array de pesos correspondentes às notas, onde cada peso é um
+     *              número inteiro positivo
+     * @return a média ponderada das notas, ou -1 se os arrays de notas e pesos
+     *         tiverem tamanhos diferentes, ou se houver uma nota ou peso inválido
+     */
+    public double calcularMediaPonderada(double[] notas, int[] pesos) {
+        if (notas == null || pesos == null || notas.length != pesos.length) {
+            return -1;
+        }
+        double somaNotas = 0;
+        int somaPesos = 0;
+        for (int i = 0; i < notas.length; i++) {
+            if (notas[i] < 0 || notas[i] > 10 || pesos[i] < 1) {
+                return -1;
+            }
+            somaNotas += notas[i] * pesos[i];
+            somaPesos += pesos[i];
+        }
+        if (somaPesos == 0) {
+            return -1;
+        }
+        return somaNotas / somaPesos;
+    }
+
+    /**
+     * Método para converter uma string de números romanos em um inteiro.
+     *
+     * @param s a string de números romanos a ser convertida
+     * @return o valor inteiro equivalente aos números romanos na string, ou -1 se a
+     *         string não for válida
+     */
+    public int converterNumerosRomanos(String s) {
+        if (s == null || s.isEmpty()) {
+            return -1;
+        }
+        int result = 0;
+        int i = 0;
+        while (i < s.length()) {
+            char c = s.charAt(i);
+            if (c == 'M') {
+                result += 1000;
+                i++;
+            } else if (c == 'D') {
+                result += 500;
+                i++;
+            } else if (c == 'C') {
+                if (i < s.length() - 1 && (s.charAt(i + 1) == 'M' || s.charAt(i + 1) == 'D')) {
+                    result -= 100;
+                } else {
+                    result += 100;
+                }
+                i++;
+            } else if (c == 'L') {
+                result += 50;
+                i++;
+            } else if (c == 'X') {
+                if (i < s.length() - 1 && (s.charAt(i + 1) == 'C' || s.charAt(i + 1) == 'L')) {
+                    result -= 10;
+                } else {
+                    result += 10;
+                }
+                i++;
+            } else if (c == 'V') {
+                result += 5;
+                i++;
+            } else if (c == 'I') {
+                if (i < s.length() - 1 && (s.charAt(i + 1) == 'X' || s.charAt(i + 1) == 'V')) {
+                    result -= 1;
+                } else {
+                    result += 1;
+                }
+                i++;
+            } else {
+                return -1;
+            }
+        }
+        return result;
+    }
+
 }
