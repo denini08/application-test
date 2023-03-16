@@ -78,4 +78,17 @@ public class DeniniTest
     public void testFactorialGabrielLuiz(){        
             myUtils.factorial(-1);
     }
+
+    @Test
+    public void testConverterNumerosRomanosRecebeStringVaziaGabrielLuiz(){
+        int resultado = myUtils.converterNumerosRomanos("");
+        int esperado  = -1;
+        assertEquals(esperado, resultado);
+    }
+    @Test
+    public void testConverterNumerosRomanosRecebeNullGabrielLuiz(){
+        int resultado = myUtils.converterNumerosRomanos(null);
+        int esperado  = -1;
+        assertEquals(esperado, resultado);
+    }
 }
