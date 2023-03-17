@@ -21,6 +21,7 @@ public class MyUtils {
         for (int i = 1; i <= num; i++) {
             result *= i;
         }
+        System.out.println(result);
         return result;
     }
 
