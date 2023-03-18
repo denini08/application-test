@@ -28,7 +28,7 @@ public class GabrielLuizTest {
 
     /*
      * @Test
-     * public void testFactorialGabrielLuiz(){        
+     * public void testFactorial(){        
      *  try{
      *     myUtils.factorial(-1);
      *  }catch(Exception ex){
@@ -38,18 +38,18 @@ public class GabrielLuizTest {
      *  }
      */
     @Test(expected = IllegalArgumentException.class)
-    public void testFactorialGabrielLuiz(){        
+    public void testFactorial(){        
             myUtils.factorial(-1);
     }
 
     @Test
-    public void testConverterNumerosRomanosRecebeStringVaziaGabrielLuiz(){
+    public void testConverterNumerosRomanosRecebeStringVazia(){
         int resultado = myUtils.converterNumerosRomanos("");
         int esperado  = -1;
         assertEquals(esperado, resultado);
     }
     @Test
-    public void testConverterNumerosRomanosRecebeNullGabrielLuiz(){
+    public void testConverterNumerosRomanosRecebeNull(){
         int resultado = myUtils.converterNumerosRomanos(null);
         int esperado  = -1;
         assertEquals(esperado, resultado);
