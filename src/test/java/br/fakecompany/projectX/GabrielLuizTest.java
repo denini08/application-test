@@ -16,8 +16,10 @@ public class GabrielLuizTest {
 
     @Test
     public void testIsPalindrome() {
-        String palindrome = "racecar";
-        assertTrue(myUtils.isPalindrome(palindrome));
+        String palindrome = "casa";
+        boolean expected  = false;
+        boolean result = myUtils.isPalindrome(palindrome);
+        assertEquals(expected, result);
     }
 
 
