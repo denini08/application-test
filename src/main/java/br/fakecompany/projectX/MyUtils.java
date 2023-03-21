@@ -172,4 +172,63 @@ public class MyUtils {
         return result;
     }
 
+    /**
+     * Encontra o número mínimo em uma lista.
+     *
+     * @param numbers a lista de números a ser verificada
+     * @return o número mínimo da lista de entrada, ou -1 se a lista for nula ou
+     *         vazia
+     */
+    public int findMinimum(List<Integer> numbers) {
+        if (numbers == null || numbers.isEmpty()) {
+            return -1;
+        }
+        int min = Integer.MAX_VALUE;
+        for (int num : numbers) {
+            if (num < min) {
+                min = num;
+            }
+        }
+        return min;
+    }
+
+    /**
+     * Verifica se um número é primo.
+     *
+     * @param num o número a ser verificado
+     * @return true se o número for primo, false caso contrário
+     */
+    public boolean isPrime(int num) {
+        if (num <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * Verifica se uma lista é uma sequência crescente de números inteiros.
+     *
+     * @param lista a lista de números a ser verificada
+     * @return true se a lista for uma sequência crescente de números inteiros,
+     *         false caso contrário ou a lista for nula
+     */
+    public boolean isListInAscendingOrder(List<Integer> lista) {
+        if (lista == null) {
+            return false;
+        }
+        int prev = Integer.MIN_VALUE;
+        for (int num : lista) {
+            if (num < prev) {
+                return false;
+            }
+            prev = num;
+        }
+        return true;
+    }
+
 }
