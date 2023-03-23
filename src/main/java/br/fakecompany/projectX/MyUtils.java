@@ -76,7 +76,7 @@ public class MyUtils {
      * @return o índice da última ocorrência do elemento na lista, ou -1 se o
      *         elemento não estiver presente na lista
      */
-    public int encontrarUltimaOcorrencia(List<Object> lista, Object elemento) {
+    public int encontrarUltimaOcorrencia(List<Integer> lista, Integer elemento) {
         if (lista == null || elemento == null) {
             return -1;
         }
