@@ -4,11 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Ignore;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class GabrielLuizTest {
     
@@ -17,9 +15,11 @@ public class GabrielLuizTest {
     @Test
     public void testIsPalindrome() {
         String palindrome = "casa";
-        boolean expected  = false;
+        String arara = "arara";
         boolean result = myUtils.isPalindrome(palindrome);
-        assertEquals(expected, result);
+        boolean araraIsPalidrome = myUtils.isPalindrome(arara);
+        assertFalse(result);
+        assertTrue(araraIsPalidrome);
     }
 
 
