@@ -46,7 +46,11 @@ public class GabrielLuizTest {
     public void testFactorial(){
         int result   = myUtils.factorial(5);
         int expected = 120;
-        assertEquals(expected,result);
+            assertEquals(expected,result);
+
+        int zeroFactorial = myUtils.factorial(0);
+            assertEquals(1,zeroFactorial);
+
     }
 
     @Test
