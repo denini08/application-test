@@ -102,5 +102,23 @@ public class GabrielLuizTest {
             Boolean aListaOrdenada  =  myUtils.isListInAscendingOrder(listaDesordenada);
                 assertFalse(aListaOrdenada);
     }
+    @Test
+    public void testFindEvenNumbers() {
+        List<Integer> emptyList = new ArrayList<>();
+        List<Integer> emptyResult = myUtils.findEvenNumbers(emptyList);
+            assertEquals(emptyList, emptyResult);
+
+        List<Integer> oddList = Arrays.asList(1, 3, 5, 7);
+        List<Integer> oddResult = myUtils.findEvenNumbers(oddList);
+            assertEquals(emptyList, oddResult);
+
+        List<Integer> evenList = Arrays.asList(28, 42, 64, 82);
+        List<Integer> evenResult = myUtils.findEvenNumbers(evenList);
+            assertEquals(evenList, evenResult);
+
+        List<Integer> randomList = Arrays.asList(71, 42, 33, 58, 95, 69, 27, 89);
+        List<Integer> randomListResult = myUtils.findEvenNumbers(randomList);
+            assertEquals(Arrays.asList(42, 58), randomListResult);
+    }
 
 }
