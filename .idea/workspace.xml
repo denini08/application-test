@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1a8e9a85-1615-4004-b9cc-276d2a5a8f5c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/fakecompany/projectX/SamuelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/fakecompany/projectX/MyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/fakecompany/projectX/MyUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/fakecompany/projectX/DeniniTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/fakecompany/projectX/DeniniTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2NQxgwK5mHuuQ3U4xluyGyCoosH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Samuel/Documents/GitHub/application-test",
+    "settings.editor.selected.configurable": "proofread"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.java in application">
+    <configuration name="SamuelTest.testCalcularMediaPonderada" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.fakecompany.projectX.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.fakecompany.projectX" />
+      <option name="MAIN_CLASS_NAME" value="br.fakecompany.projectX.SamuelTest" />
+      <option name="METHOD_NAME" value="testCalcularMediaPonderada" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SamuelTest.testConverterNumerosRomanosSamuel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.fakecompany.projectX.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.fakecompany.projectX" />
+      <option name="MAIN_CLASS_NAME" value="br.fakecompany.projectX.SamuelTest" />
+      <option name="METHOD_NAME" value="testConverterNumerosRomanosSamuel" />
+      <option name="TEST_OBJECT" value="method" />
+      <dir value="$PROJECT_DIR$/src/test/java/br/fakecompany/projectX" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SamuelTest.testEncontrarUltimaOcorrenciaSamuel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.fakecompany.projectX.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.fakecompany.projectX" />
+      <option name="MAIN_CLASS_NAME" value="br.fakecompany.projectX.SamuelTest" />
+      <option name="METHOD_NAME" value="testEncontrarUltimaOcorrenciaSamuel" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in application" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="application" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="projectX in application" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="application" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/br/fakecompany/projectX" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="application-test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="application-test" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.java in application" />
+        <item itemvalue="JUnit.SamuelTest.testCalcularMediaPonderada" />
+        <item itemvalue="JUnit.SamuelTest.testEncontrarUltimaOcorrenciaSamuel" />
+        <item itemvalue="JUnit.projectX in application" />
+        <item itemvalue="JUnit.SamuelTest.testConverterNumerosRomanosSamuel" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1a8e9a85-1615-4004-b9cc-276d2a5a8f5c" name="Changes" comment="" />
+      <created>1679610228160</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679610228160</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/application_test$projectX_in_application.ic" NAME="projectX in application Coverage Results" MODIFIED="1679611443302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/application_test$SamuelTest_testConverterNumerosRomanosSamuel.ic" NAME="SamuelTest.testConverterNumerosRomanosSamuel Coverage Results" MODIFIED="1679611511055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>br.fakecompany.projectX.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/application_test$java_in_application.ic" NAME="java in application Coverage Results" MODIFIED="1679611669590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
