@@ -15,9 +15,6 @@ public class SamuelTest {
     public void testFactorialSamuel(){
 
         assertEquals(120, myUtils.factorial(5));
-
-
-
     }
 
     @Test
@@ -27,8 +24,6 @@ public class SamuelTest {
         for(int i = 10;i<21;i++ ){
             a.add(i);
         }
-
-
 
         assertEquals(5, myUtils.encontrarUltimaOcorrencia(a, 15));
 
@@ -98,8 +93,6 @@ public class SamuelTest {
         b=new int[] {0,0,0,0};
 
         assertEquals(-1,myUtils.calcularMediaPonderada(a,b),0);
-
-
 
     }
 }
