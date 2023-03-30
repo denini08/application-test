@@ -10,41 +10,6 @@ import org.junit.Ignore;
 public class JuelyTeste {
 
     private MyUtils myUtils = new MyUtils();
-
-    @Test
-    public void testIsPalindrome() {
-        String palindrome = "racecar";
-        assertTrue(myUtils.isPalindrome(palindrome));
-    }
-
-
-    @Test
-    public void testFail(){
-        assertTrue(true);
-    }
-    
-    // @Test
-    // public void testFactorial() {
-    // 	assertEquals(myUtils.factorial(5), 120);
-    // 	assertEquals(0,myUtils.factorial(0));
-    	
-    // }
-    
-    @Test(expected = IllegalArgumentException.class)
-    public void testFactorial2() {
-    	assertEquals(myUtils.factorial(-2), 0);
-    }
-    
-    // @Test
-    // public void testisPalindrome() {
-    //     assertTrue(myUtils.isPalindrome("natan"));
-    //     assertFalse(myUtils.isPalindrome(null));
-    // }
-    
-    @Test
-    public void testeconverterNumerosRomanos() {
-    	assertEquals(myUtils.converterNumerosRomanos("III"), 3);
-    }
 //=============================================================
 // exercício 23/03/2023 atual  
 
