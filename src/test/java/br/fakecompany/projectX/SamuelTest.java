@@ -7,15 +7,10 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+
 
 public class SamuelTest {
     private MyUtils myUtils = new MyUtils();
-    @Test
-    public void testFactorialSamuel(){
-
-        assertEquals(120, myUtils.factorial(5));
-    }
 
     @Test
     public void testEncontrarUltimaOcorrenciaSamuel(){
@@ -27,21 +22,68 @@ public class SamuelTest {
 
         assertEquals(5, myUtils.encontrarUltimaOcorrencia(a, 15));
 
+        //envia uma lista nula e espera -1
+        a = null;
+
+        assertEquals(-1, myUtils.encontrarUltimaOcorrencia(a, 15));
+
     }
     @Test
-    public void testConverterNumerosRomanosSamuel(){
+    public void testConverterNumerosRomanosSamuel() {
 
         assertEquals(115, myUtils.converterNumerosRomanos("CXV"));
 
+    }
+
+    @Test
+    public void testConverterNumerosRomanosSamuel1() {
         assertEquals(-1, myUtils.converterNumerosRomanos("CxV"));
     }
 
     @Test
-    public void testIsPalindrome() {
-        String palindrome = "racecar";
-        assertTrue(myUtils.isPalindrome(palindrome));
+    public void testConverterNumerosRomanosSamuel2() {
+        assertEquals(-1, myUtils.converterNumerosRomanos(null));
     }
 
+    @Test
+    public void testConverterNumerosRomanosSamuel3() {
+        assertEquals(1000, myUtils.converterNumerosRomanos("M"));
+    }
+
+    @Test
+    public void testConverterNumerosRomanosSamuel4() {
+        assertEquals(500, myUtils.converterNumerosRomanos("D"));
+    }
+
+    @Test
+    public void testConverterNumerosRomanosSamuel5() {
+        assertEquals(400, myUtils.converterNumerosRomanos("CD"));
+    }
+
+    @Test
+    public void testConverterNumerosRomanosSamuel6() {
+        assertEquals(100, myUtils.converterNumerosRomanos("C"));
+    }
+
+    @Test
+    public void testConverterNumerosRomanosSamue7() {
+        assertEquals(50, myUtils.converterNumerosRomanos("L"));
+    }
+
+    @Test
+    public void testConverterNumerosRomanosSamuel8() {
+        assertEquals(40, myUtils.converterNumerosRomanos("XL"));
+    }
+
+    @Test
+    public void testConverterNumerosRomanosSamuel9() {
+        assertEquals(6, myUtils.converterNumerosRomanos("VI"));
+    }
+
+    @Test
+    public void testConverterNumerosRomanosSamuel10() {
+        assertEquals(4, myUtils.converterNumerosRomanos("IV"));
+    }
     @Test
     public void testFindEvenNumbersSamuel() {
         // Testa com lista vazia
@@ -49,6 +91,12 @@ public class SamuelTest {
         List<Integer> emptyResult = myUtils.findEvenNumbers(emptyList);
         // Deve retornar uma lista vazia
         assertEquals(emptyList, emptyResult);
+
+        // Testa com lista vazia
+        List<Integer> nullList = null;
+        List<Integer> nullResult = myUtils.findEvenNumbers(nullList);
+        // Deve retornar uma lista vazia
+        assertEquals(emptyList, nullResult);
 
         // Testa com uma lista que contém apenas números ímpares
         List<Integer> oddList = Arrays.asList(1, 3, 5, 7);
@@ -89,7 +137,12 @@ public class SamuelTest {
         //como o valor da nota é maior do que 10 ele retorna -1
         assertEquals(-1,myUtils.calcularMediaPonderada(a,b),0);
 
-        a=new double[] {2,1,4,5.5};
+        a=new double[] {2,5,4,5.5};
+        b=new int[] {0,0,0,0};
+
+        assertEquals(-1,myUtils.calcularMediaPonderada(a,b),0);
+
+        a=null;
         b=new int[] {0,0,0,0};
 
         assertEquals(-1,myUtils.calcularMediaPonderada(a,b),0);
