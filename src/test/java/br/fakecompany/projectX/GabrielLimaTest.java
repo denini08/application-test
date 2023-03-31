@@ -11,7 +11,7 @@ public class GabrielLimaTest {
     private MyUtils myUtils = new MyUtils();
 
     @Test //VERIFICO SE O NUMERO É PRIMO OU NÃO
-    public void testIsPrime() {
+    public void testIsPrime1() {
         int num;
 
         num = 3; // 3 é um valor primo
@@ -20,10 +20,69 @@ public class GabrielLimaTest {
         num = 9; // 9 NÃO é um valor primo
         assertFalse(myUtils.isPrime(num));
 
+        num = 13; // 36 NÃO é um valor primo
+        assertFalse(myUtils.isPrime(num));
+        
+    }
+    @Test //VERIFICO SE O NUMERO É PRIMO OU NÃO
+    public void testIsPrime2() {
+        int num;
+
+        num = 17; // 36 NÃO é um valor primo
+        assertFalse(myUtils.isPrime(num));
+
+        num = 1; // 1 é um valor primo
+        assertTrue(myUtils.isPrime(num));
+
         num = 0; // 3 é um valor primo
+        assertFalse(myUtils.isPrime(num));
+    }
+
+    @Test //VERIFICO SE O NUMERO É PRIMO OU NÃO
+    public void testIsPrime3() {
+        int num;
+
+        num = -1; // -1 NÂO é um valor primo (negativo)
+        assertFalse(myUtils.isPrime(num));
+        
+        num = -2; // -1 NÂO é um valor primo (negativo)
         assertFalse(myUtils.isPrime(num));
 
         num = -3; // -3 NÂO é um valor primo (negativo)
+        assertFalse(myUtils.isPrime(num));
+    }
+    @Test //VERIFICO SE O NUMERO É PRIMO OU NÃO
+    public void testIsPrime4() {
+        int num;
+
+        num = -4; // -4 NÂO é um valor primo (negativo)
+        assertFalse(myUtils.isPrime(num));
+        
+        num = -5; // -5 NÂO é um valor primo (negativo)
+        assertFalse(myUtils.isPrime(num));
+    }
+
+    @Test //VERIFICO SE O NUMERO É PRIMO OU NÃO
+    public void testIsPrime5() {
+        int num;
+
+        num = -6; // -6 NÂO é um valor primo (negativo)
+        assertFalse(myUtils.isPrime(num));
+    }
+
+    @Test //VERIFICO SE O NUMERO É PRIMO OU NÃO
+    public void testIsPrime6() {
+        int num;
+
+        num = -7; // -7 NÃO é um valor primo (negativo)
+        assertFalse(myUtils.isPrime(num));
+    }
+
+    @Test //VERIFICO SE O NUMERO É PRIMO OU NÃO
+    public void testIsPrime7() {
+        int num;
+
+        num = -8; // -8 NÃO é um valor primo (negativo)
         assertFalse(myUtils.isPrime(num));
 
         num = -9; // -9 NÃO é um valor primo (negativo)
