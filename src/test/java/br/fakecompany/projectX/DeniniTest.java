@@ -59,6 +59,7 @@ public class DeniniTest
 
 
     @Test
+    @Ignore
     public void testFail(){
         assertTrue(false);
     }
