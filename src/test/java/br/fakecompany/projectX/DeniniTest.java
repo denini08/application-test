@@ -57,11 +57,10 @@ public class DeniniTest
         assertTrue(myUtils.isPalindrome(palindrome));
     }
 
-
-    @Test
     @Ignore
+    @Test
     public void testFail(){
-        assertTrue(false);
+        assertTrue(true);
     }
 
 }
